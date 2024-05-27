@@ -32,7 +32,7 @@ const PokemonList: React.FC = () => {
 
   return (
     <div className="w-full">
-      <div className="mx-5 mt-5 md:w-1/2 md:mx-auto">
+      <div className="mx-8 mt-5 md:w-1/2 md:mx-auto">
         <Input
           type="text"
           placeholder="Cari Pokemon"
@@ -46,7 +46,7 @@ const PokemonList: React.FC = () => {
           <img src={error} alt="" />
         </div>
       ) : (
-        <div className="my-10 grid grid-cols-1 md:grid-cols-4 gap-5 mx-5">
+        <div className="my-10 grid grid-cols-1 md:grid-cols-4 gap-5 mx-8 md:mx-5">
           {filteredPokemon.map((item, index) => (
             <PokemonItems key={index} pokemon={item} />
           ))}
