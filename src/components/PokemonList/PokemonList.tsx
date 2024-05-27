@@ -9,6 +9,7 @@ interface Pokemon {
   imageUrl: any;
   description: string;
   color: string;
+  types: string[];
 }
 
 const PokemonList: React.FC = () => {
@@ -45,7 +46,7 @@ const PokemonList: React.FC = () => {
           <img src={error} alt="" />
         </div>
       ) : (
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-5 mx-5">
+        <div className="my-10 grid grid-cols-1 md:grid-cols-4 gap-5 mx-5">
           {filteredPokemon.map((item, index) => (
             <PokemonItems key={index} pokemon={item} />
           ))}

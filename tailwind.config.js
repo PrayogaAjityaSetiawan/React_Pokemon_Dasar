@@ -9,6 +9,12 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    boxShadow: {
+      sm: "5px 5px black",
+    },
+    fontFamily: {
+      jura : ['Jura', 'sans-serif']
+    },
     container: {
       center: true,
       padding: "2rem",
